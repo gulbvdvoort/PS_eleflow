@@ -161,3 +161,4 @@ cython_debug/
 
 # Google Drive for windows
 .tmp.driveupload/
+desktop.ini
