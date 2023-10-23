@@ -11,6 +11,8 @@ python solution.ipynb
 ```
 
 ## Explicações do projeto
+O projeto foi desenvolvido majoritariamente utilziando `Jupyter Notebook` com códigos `Python` devido sua versatilidade, modularização de códigos permitindo rodar separadamente cada parte do código e também permitir a combinação de blocos em `Markdown` de modo a melhorar a legibilidade e explicação do projeto.
+
 A escolha do `SQLite` foi feita devido à sua fácil portabilidade, permitindo que o projeto seja facilmente transferido. Além disso, o `SQLite` é uma opção gratuita, o que contribui para a economia de recursos no projeto. Embora tenha considerado a possibilidade de criar uma conta "trial" no `Google Cloud Platform` (GCP) para utilizar o `BigQuery`, optei por usar o `SQLite` para garantir uma correção e visualização mais simples dos dados pela equipe da Eleflow, ao mesmo tempo em que reduzimos custos.
 
 ### Primeira Questão
