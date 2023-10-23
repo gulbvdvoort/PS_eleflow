@@ -67,12 +67,12 @@ A escolha do `SQLite` foi feita devido à sua fácil portabilidade, permitindo q
 
 ## Extras:
 ### Ingestão Incremental
-- Para a ingestão incremental, caso os dados continuassem a ser disponibilizados da mesma forma, eu colocaria os códigos de ETL Python em `Cloud Functions` do GCP. 
+- Para a ingestão incremental, caso os dados continuassem a ser disponibilizados da mesma forma e com volumetria similar, eu colocaria os códigos de ETL Python em `Cloud Functions` do GCP. 
 - Para o envio dos dados pelo cliente, eu criaria formulários através do `Pipefy` em que o cliente enviaria os arquivos e automaticamente, através de um gatilho `Webhook`, as functions processariam os dados e os guardariam em suas respectivas tabelas no `BigQuery`.
 ### Escalabilidade
 - Apesar das vantagens do `SQLite`, ele não proporciona muita escalabilidade ao projeto em comparação as tecnologias de `Cloud Computing`, visto que ele é um banco de dados local e dependeria de um servidor `One Premisse` para operar.
 - Dessa forma, eu migraria todo o projeto para algum serviço de Cloud de modo que o projeto seja automaticamente escalável.
-- Entretanto, como todo o processo de ETL foi feito através da linguagem Python, ele é facilmente escalável visto que sua manutenção é simples, fácil e totalmente baseada em uma linguagem `Open Source`
+- Entretanto, como o processo de ETL foi feito através da linguagem Python, ele é facilmente escalável visto que sua manutenção é simples, fácil e totalmente baseada em uma linguagem `Open Source`
 ### Camadas utilizada
 - As camadas utilizadas estão detalhadamentes descritas na seção [Explicações do projeto](#Explicações-do-projeto)
 
